@@ -73,48 +73,21 @@
                                 </ul>
                                 <ul class="mv-ul clearfix group-language">
                                     <li class="item-button dropdown mv-dropdown-style-1 item-currency">
-                                        <button type="button" data-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false" class="mv-btn mv-btn-style-24"> <i
-                                                class="fa fa-usd"></i>&nbsp; USD<i
-                                                class="icon fa fa-angle-down"></i></button>
+                                       
                                         <div class="dropdown-menu pull-right">
                                             <div class="dropdown-menu-inner">
                                                 <nav class="mv-menu-style-3">
-                                                    <ul>
-                                                        <li><a href="#"><i class="fa fa-eur"></i>&nbsp; EUR</a></li>
-                                                        <li><a href="#"><i class="fa fa-usd"></i>&nbsp; AUD</a></li>
-                                                        <li><a href="#"><i class="fa fa-gbp"></i>&nbsp; GBP</a></li>
-                                                        <li><a href="#"><i class="fa fa-rub"></i>&nbsp; RUB</a></li>
-                                                        <li><a href="#"><i class="fa fa-yen"></i>&nbsp; YEN</a></li>
-                                                        <li><a href="#"><i class="fa fa-krw"></i>&nbsp; WON</a></li>
-                                                    </ul>
+                                                   
                                                 </nav>
                                             </div>
                                         </div>
                                     </li>
                                     <li class="item-button dropdown mv-dropdown-style-1 item-language">
-                                        <button type="button" data-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false" class="mv-btn mv-btn-style-24"> <img
-                                                src="{{ env('APP_ASSET') }}assets/images/icon/icon_flag_england.png"
-                                                alt="icon" /><span class="btn-text hidden-xs hidden-sm">&nbsp;
-                                                English</span><i class="icon fa fa-angle-down"></i></button>
+                                       
                                         <div class="dropdown-menu pull-right">
                                             <div class="dropdown-menu-inner">
                                                 <nav class="mv-menu-style-3">
-                                                    <ul>
-                                                        <li><a href="#"><img
-                                                                    src="{{ env('APP_ASSET') }}assets/images/icon/icon_flag_france.png"
-                                                                    alt="icon" />&nbsp; France</a></li>
-                                                        <li><a href="#"><img
-                                                                    src="{{ env('APP_ASSET') }}assets/images/icon/icon_flag_italy.png"
-                                                                    alt="icon" />&nbsp; Italy</a></li>
-                                                        <li><a href="#"><img
-                                                                    src="{{ env('APP_ASSET') }}assets/images/icon/icon_flag_germany.png"
-                                                                    alt="icon" />&nbsp; Germany</a></li>
-                                                        <li><a href="#"><img
-                                                                    src="{{ env('APP_ASSET') }}assets/images/icon/icon_flag_spain.png"
-                                                                    alt="icon" />&nbsp; Spain</a></li>
-                                                    </ul>
+                                                    
                                                 </nav>
                                             </div>
                                         </div>
@@ -188,38 +161,9 @@
                                 <ul class="nav sf-menu">
                                     <li class="mega-columns"><a href="home.html"><span class="menu-text">Home <i
                                                     class="menu-icon fa fa-angle-down"></i></span></a>
-                                        <ul class="row">
-                                            <li class="col-xs-3 mega-col"><a href="home.html" class="mega-title"><span
-                                                        class="menu-text">Homepage Demos</span></a>
-                                                <ul class="mega-content">
-                                                    <li class="active"><a href="home.html">Home 1</a></li>
-                                                    <li><a href="home-2.html">Home 2</a></li>
-                                                    <li><a href="home-3.html">Home 3</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="col-xs-3 mega-col"><a href="home.html" class="mega-title"><span
-                                                        class="menu-text">Homepage Demos</span></a>
-                                                <ul class="mega-content">
-                                                    <li><a href="home-4.html">Home 4</a></li>
-                                                    <li><a href="home-5.html">Home 5</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="col-xs-3 mega-col"><a href="home.html" class="mega-title"><span
-                                                        class="menu-text">Homepage Demos</span></a>
-                                                <ul class="mega-content">
-                                                    <li><a href="home-lookbook-1.html">Home Lookbook 1</a></li>
-                                                    <li><a href="home-lookbook-2.html">Home Lookbook 2</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="col-xs-3 mega-col"><a href="home.html" class="mega-title"><span
-                                                        class="menu-text">Homepage Demos</span></a>
-                                                <ul class="mega-content">
-                                                    <li><a href="home-parallax.html">Home Parallax</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
+                                        
                                     </li>
-                                    <li><a href="{{route('pro_all')}}"><span class="menu-text">Product <i
+                                    <li><a href="#"><span class="menu-text">ถุงมือผู้รักษาประตู <i
                                                     class="menu-icon fa fa-angle-down"></i></span></a>
                                         <ul>
                                             <li><a href="product-list.html">Product List</a></li>
@@ -234,7 +178,7 @@
                                             <li><a href="search.html">Search</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#"><span class="menu-text">Shop <i
+                                    <li><a href="#"><span class="menu-text">สินค้าอื่นๆ <i
                                                     class="menu-icon fa fa-angle-down"></i></span></a>
                                         <ul>
                                             <li><a href="cart.html">Cart</a></li>
@@ -1044,7 +988,7 @@
                 dataType: "json",
                 success: (data) => {
                     console.log(data)
-                    let path = "{{ env('APP_ASSET') }}"
+                    let path = "{{ env('APP_ASSET') }}assets/"
                     let len = data.cart_list.length
                     let str = '',
                         total = 0;
@@ -1078,7 +1022,7 @@
                     str +='</div>'
                     str +='</div>'
                     str +='</div>'
-                    str +='<button type="button" onclick="delete_cart(' + data.cart_list[i].cart_id +')" title="Remove from Wishlist"'
+                    str +='<button type="button" title="Remove from Wishlist"'
                     str +='class="mv-btn mv-btn-style-4 fa fa-close btn-delete-product"></button>'
                     str +='</div>'
                     str +='</article>'
@@ -1090,7 +1034,8 @@
                         // str += '         <p class="product-name">' + data.cart_list[i].pro_name + '</p>';
                         // str += '         <p class="product-price">' + data.cart_list[i].cart_qty + ' x ฿' + data.cart_list[i].pro_price + '</p>';
                         // str += '     </div>';
-                        // str += '     <a href="#" onclick="delete_cart(' + data.cart_list[i].cart_id +')" class="delete-item">';
+                        // str += '     <a href="#" onclick="delete_cart(' + data.cart_list[i].cart_id +
+                        //     ')" class="delete-item">';
                         // str += '         <i class="zmdi zmdi-close-circle-o"></i>';
                         // str += '     </a>';
                         // str += ' </li>';
