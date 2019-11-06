@@ -47,6 +47,9 @@
             border-color: #843534 !important;
             box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483 !important;
         }
+        .swal2-container {
+            z-index: 333333 !important;
+        }
 
     </style>
 </head>
@@ -99,21 +102,25 @@
                                         <div class="item-button mv-btn dropdown mv-dropdown-style-1">
                                             <button type="button" data-toggle="dropdown" aria-haspopup="true"
                                                 aria-expanded="false" class="mv-btn mv-btn-style-12"><span
-                                                    class="btn-text hidden-xs hidden-sm">my account</span><i
+                                        class="btn-text hidden-xs hidden-sm">{{(Session::has('user_id'))?Session::get('name'):'My account'}}</span><i
                                                     class="btn-icon fa fa-user hidden-md hidden-lg"></i><i
                                                     class="icon fa fa-caret-down"></i></button>
                                             <div class="dropdown-menu pull-right">
                                                 <div class="dropdown-menu-inner">
                                                     <nav class="mv-menu-style-3">
                                                         <ul>
-                                                            <li><a href="login.html"><i
+                                                        @if (Session::has('user_id'))
+                                                        <li><a href="{{ url('/logout') }}"><i
+                                                            class="fa fa-sign-in mv-color-primary"></i>&nbsp;
+                                                        Logout</a></li>
+                                                        @else
+                                                            <li><a href="#" data-toggle="modal" data-target="#popupNewsletter"><i
                                                                         class="fa fa-sign-in mv-color-primary"></i>&nbsp;
                                                                     Login</a></li>
-                                                            <li><a href="login.html"><i
+                                                            <li><a href="#" data-toggle="modal" data-target="#register_modal"><i
                                                                         class="fa fa-pencil-square-o mv-color-primary"></i>&nbsp;
                                                                     Register</a></li>
-                                                            <li><a href="wishlist.html">My Wishlist</a></li>
-                                                            <li><a href="compare.html">Compare</a></li>
+                                                        @endif
                                                         </ul>
                                                     </nav>
                                                 </div>
@@ -254,122 +261,19 @@
                                 <div class="item-button dropdown mv-dropdown-style-1 script-dropdown-1">
                                     <button type="button" class="mv-btn mv-btn-style-11 btn-dropdown btn-my-cart"><span
                                             class="btn-inner"><span class="icon fa fa-shopping-bag"></span><span
-                                                class="number">3</span></span></button>
+                                                class="number len_in">3</span></span></button>
                                     <div class="dropdown-menu pull-right">
                                         <div class="dropdown-menu-inner">
                                             <div class="mv-block-style-39">
-                                                <div class="block-39-header">You have <span class="mv-color-primary">3
+                                                <div class="block-39-header">You have <span class="mv-color-primary len_in">3
                                                         items</span> in your shopping cart</div>
-                                                <div class="block-39-list">
-                                                    <article class="item post">
-                                                        <div class="item-inner">
-                                                            <div class="mv-dp-table align-top">
-                                                                <div class="mv-dp-table-cell block-39-thumb">
-                                                                    <div class="thumb-inner mv-lightbox-style-1"><a
-                                                                            href="product-detail.html"
-                                                                            title="Richa Rock Glove"><img
-                                                                                src="{{ env('APP_ASSET') }}assets/images/demo/demo_80x100.png"
-                                                                                alt="demo"
-                                                                                class="block-39-thumb-img" /></a></div>
-                                                                </div>
-                                                                <div class="mv-dp-table-cell block-39-main">
-                                                                    <div class="block-39-main-inner">
-                                                                        <div class="block-39-title"><a
-                                                                                href="product-detail.html"
-                                                                                title="Richa Rock Glove"
-                                                                                class="mv-overflow-ellipsis">Richa Rock
-                                                                                Glove</a></div>
-                                                                        <div class="block-39-price">
-                                                                            <div class="new-price">$200,00</div>
-                                                                        </div>
-                                                                        <ul class="block-24-meta mv-ul">
-                                                                            <li class="meta-item mv-icon-left-style-3">
-                                                                                <span class="text">Quanlity: 2</span>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <button type="button" title="Remove from Wishlist"
-                                                                class="mv-btn mv-btn-style-4 fa fa-close btn-delete-product"></button>
-                                                        </div>
-                                                    </article>
-                                                    <!-- .post-->
-
-                                                    <article class="item post">
-                                                        <div class="item-inner">
-                                                            <div class="mv-dp-table align-top">
-                                                                <div class="mv-dp-table-cell block-39-thumb">
-                                                                    <div class="thumb-inner mv-lightbox-style-1"><a
-                                                                            href="product-detail.html"
-                                                                            title="Richa Rock Glove"><img
-                                                                                src="images/demo/demo_80x100.png"
-                                                                                alt="demo"
-                                                                                class="block-39-thumb-img" /></a></div>
-                                                                </div>
-                                                                <div class="mv-dp-table-cell block-39-main">
-                                                                    <div class="block-39-main-inner">
-                                                                        <div class="block-39-title"><a
-                                                                                href="product-detail.html"
-                                                                                title="Richa Rock Glove"
-                                                                                class="mv-overflow-ellipsis">Richa Rock
-                                                                                Glove Richa Rock Glove</a></div>
-                                                                        <div class="block-39-price">
-                                                                            <div class="new-price">$200,00</div>
-                                                                        </div>
-                                                                        <ul class="block-24-meta mv-ul">
-                                                                            <li class="meta-item mv-icon-left-style-3">
-                                                                                <span class="text">Quanlity: 2</span>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <button type="button" title="Remove from Wishlist"
-                                                                class="mv-btn mv-btn-style-4 fa fa-close btn-delete-product"></button>
-                                                        </div>
-                                                    </article>
-                                                    <!-- .post-->
-
-                                                    <article class="item post">
-                                                        <div class="item-inner">
-                                                            <div class="mv-dp-table align-top">
-                                                                <div class="mv-dp-table-cell block-39-thumb">
-                                                                    <div class="thumb-inner mv-lightbox-style-1"><a
-                                                                            href="product-detail.html"
-                                                                            title="Richa Rock Glove"><img
-                                                                                src="images/demo/demo_80x100.png"
-                                                                                alt="demo"
-                                                                                class="block-39-thumb-img" /></a></div>
-                                                                </div>
-                                                                <div class="mv-dp-table-cell block-39-main">
-                                                                    <div class="block-39-main-inner">
-                                                                        <div class="block-39-title"><a
-                                                                                href="product-detail.html"
-                                                                                title="Richa Rock Glove"
-                                                                                class="mv-overflow-ellipsis">Richa Rock
-                                                                                Glove</a></div>
-                                                                        <div class="block-39-price">
-                                                                            <div class="new-price">$200,00</div>
-                                                                        </div>
-                                                                        <ul class="block-24-meta mv-ul">
-                                                                            <li class="meta-item mv-icon-left-style-3">
-                                                                                <span class="text">Quanlity: 2</span>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <button type="button" title="Remove from Wishlist"
-                                                                class="mv-btn mv-btn-style-4 fa fa-close btn-delete-product"></button>
-                                                        </div>
-                                                    </article>
-                                                    <!-- .post-->
+                                                <div class="block-39-list" id="list_cart">
+                                                 
                                                 </div>
 
                                                 <div class="block-39-total mv-col-wrapper">
                                                     <div class="mv-col-left">total</div>
-                                                    <div class="mv-col-right">$3600.00</div>
+                                                    <div class="mv-col-right" id="total_price">0.00</div>
                                                 </div>
 
                                                 <div class="block-39-footer">
@@ -396,10 +300,13 @@
             <!-- .header-main-nav-->
         </header>
         <!-- .header-->
-
+        {{-- <a href="#"  class="mv-btn mv-btn-style-5">popupNewsletter</a> --}}
         @yield('contents')
+
+        @include('layouts.modal_tmp')
+
         <footer class="footer mv-footer-style-2 mv-wrap">
-            <div style="background-image: url(images/background/demo_bg_1920x1200.png)" class="footer-bg">
+            <div style="background-image: url({{ env('APP_ASSET') }}assets/images/background/demo_bg_1920x1200.png)" class="footer-bg">
                 <div class="container">
                     <div class="footer-inner">
                         <div id="footerNav" role="tablist" aria-multiselectable="true" class="footer-nav panel-group">
@@ -927,7 +834,7 @@
                                                                 title="Richa Drift Water"><img
                                                                     src="{{ env('APP_ASSET') }}assets/images/demo/demo_300x400.png"
                                                                     alt="demo" /></a><a
-                                                                href="images/demo/demo_300x400.png"
+                                                                href="{{ env('APP_ASSET') }}assets/images/demo/demo_300x400.png"
                                                                 title="Richa Drift Water"
                                                                 data-lightbox-href="product-detail.html"
                                                                 class="mv-btn mv-btn-style-20 mv-lightbox-item"><i
@@ -1086,26 +993,58 @@
                     let str = '',
                         total = 0;
                     for (let i = 0; i < len; i++) {
-                        str += '<li>';
-                        str += '<a href="#" title="" class="cart-product-image"><img';
-                        str += '             src="' + path + 'images/product_img/' + data.cart_list[i]
-                            .pro_img + '" alt="Product"></a>';
-                        str += '     <div class="text">';
-                        str += '         <p class="product-name">' + data.cart_list[i].pro_name + '</p>';
-                        str += '         <p class="product-price">' + data.cart_list[i]
-                            .cart_qty + ' x ฿' + data.cart_list[i].pro_price + '</p>';
-                        str += '     </div>';
-                        str += '     <a href="#" onclick="delete_cart(' + data.cart_list[i].cart_id +
-                            ')" class="delete-item">';
-                        str += '         <i class="zmdi zmdi-close-circle-o"></i>';
-                        str += '     </a>';
-                        str += ' </li>';
+
+                    str +='<article class="item post">'
+                    str +='<div class="item-inner">'
+                    str +='<div class="mv-dp-table align-top">'
+                    str +='<div class="mv-dp-table-cell block-39-thumb">'
+                    str +='<div class="thumb-inner mv-lightbox-style-1">'
+                    str +='<a href="product-detail.html"'
+                    str +='title="Richa Rock Glove"><img width="80px"'
+                    str +='src="' + path + 'images/product_img/' + data.cart_list[i].pro_img + '"'
+                    str +='alt="demo"'
+                    str +='class="block-39-thumb-img" /></a></div>'
+                    str +='</div>'
+                    str +='<div class="mv-dp-table-cell block-39-main">'
+                    str +='<div class="block-39-main-inner">'
+                    str +='<div class="block-39-title"><a'
+                    str +='href="product-detail.html"'
+                    str +='title="' + data.cart_list[i].pro_name + '"'
+                    str +='class="mv-overflow-ellipsis">' + data.cart_list[i].pro_name + '</a></div>'
+                    str +='<div class="block-39-price">'
+                    str +='<div class="new-price">฿' + data.cart_list[i].pro_price + '</div>'
+                    str +='</div>'
+                    str +='<ul class="block-24-meta mv-ul">'
+                    str +='<li class="meta-item mv-icon-left-style-3">'
+                    str +='<span class="text">Quanlity: ' + data.cart_list[i].cart_qty + '</span>'
+                    str +='</li>'
+                    str +='</ul>'
+                    str +='</div>'
+                    str +='</div>'
+                    str +='</div>'
+                    str +='<button type="button" title="Remove from Wishlist"'
+                    str +='class="mv-btn mv-btn-style-4 fa fa-close btn-delete-product"></button>'
+                    str +='</div>'
+                    str +='</article>'
+
+                        // str += '<li>';
+                        // str += '<a href="#" title="" class="cart-product-image"><img';
+                        // str += '             src="' + path + 'images/product_img/' + data.cart_list[i].pro_img + '" alt="Product"></a>';
+                        // str += '     <div class="text">';
+                        // str += '         <p class="product-name">' + data.cart_list[i].pro_name + '</p>';
+                        // str += '         <p class="product-price">' + data.cart_list[i].cart_qty + ' x ฿' + data.cart_list[i].pro_price + '</p>';
+                        // str += '     </div>';
+                        // str += '     <a href="#" onclick="delete_cart(' + data.cart_list[i].cart_id +
+                        //     ')" class="delete-item">';
+                        // str += '         <i class="zmdi zmdi-close-circle-o"></i>';
+                        // str += '     </a>';
+                        // str += ' </li>';
                         total += parseFloat(data.cart_list[i].pro_price) * parseInt(data.cart_list[i]
                             .cart_qty)
                     }
                     $('#list_cart').html(str)
-                    $('#in_cart_label').html(len)
-                    $('#total_price').html('<span>Total cost</span> ฿' + total.toFixed(2))
+                    $('.len_in').html(len)
+                    $('#total_price').html('฿' + total.toFixed(2))
                 },
                 error: (error) => {
                     console.log(error)
@@ -1174,14 +1113,15 @@
                         $('#div_re_pwd').removeClass('has-error');
                         $('#div_re_pwd').addClass('has-success');
                         $('#help_re_pwd').html('')
-                        $('#btn_register').prop("disabled", false);
+                        $('#btn_register').attr("onclick", 'register_user()');
                     } else {
                         $('#re_pwd').removeClass('success_use');
                         $('#re_pwd').addClass('error_use');
                         $('#div_re_pwd').removeClass('has-success');
                         $('#div_re_pwd').addClass('has-error');
                         $('#help_re_pwd').html('Username already!')
-                        $('#btn_register').prop("disabled", true);
+                        // $('#btn_register').prop("disabled", true);
+                        $('#btn_register').attr("onclick", 'feed_error(`Username already exit !!!`)');
                     }
                 },
                 "json"
