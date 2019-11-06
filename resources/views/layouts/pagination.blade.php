@@ -1,9 +1,11 @@
 @if ($paginator->hasPages())
-    <nav class="pagination">
+<ul class="pagination">
+        {{-- <nav class="pagination"> --}}
         @if ($paginator->onFirstPage())
-            <a class="page-numbers" disabled><</a>
+        <li class="prev"><a href="#">prev</a></li>
         @else
-            <a href="{{ $paginator->previousPageUrl() }}" rel="prev" class="page-numbers"><</a>
+        <li class="prev"><a href="{{ $paginator->previousPageUrl() }}">prev</a></li> 
+        {{-- <a href="{{ $paginator->previousPageUrl() }}" rel="prev" class="page-numbers"><</a> --}}
         @endif
 
        
@@ -21,9 +23,10 @@
                     @foreach ($element as $page => $url)
                         @if ($page == $paginator->currentPage())
                             {{-- <li><a class="pagination-link is-current"></a></li> --}}
-                            <span class="page-numbers current">{{ $page }}</span>
+                            <li class="active"><a>{{ $page }}</a></li>
                         @else
-                            <a href="{{ $url }}" class="page-numbers">{{ $page }}</a>
+                            {{-- <a href="{{ $url }}" class="page-numbers">{{ $page }}</a> --}}
+                            <li><a href="{{ $url }}">{{ $page }}</a></li>
                         @endif
                     @endforeach
                 @endif
@@ -31,12 +34,25 @@
 
 
             @if ($paginator->hasMorePages())
-            <a class="page-numbers" href="{{ $paginator->nextPageUrl() }}" rel="next">></a>
+            <li class="next"><a href="{{ $paginator->nextPageUrl() }}">next</a></li>
+            {{-- <a class="page-numbers" href="{{ $paginator->nextPageUrl() }}" rel="next">></a> --}}
         @else
-            <a class="page-numbers" disabled>></a>
+        <li class="next"><a href="#">next</a></li>
+        {{-- <a class="page-numbers" disabled>></a> --}}
+            {{-- <a class="page-numbers" disabled>></a> --}}
         @endif
 
-        {{-- </ul> --}}
-    </nav>
+        </ul>
+    {{-- </nav> --}}
 @endif
+
+{{-- <ul class="pagination">
+        <li class="prev"><a href="#">prev</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li class="active"><a>3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li class="next"><a href="#">next</a></li>
+      </ul> --}}
 
