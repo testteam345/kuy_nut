@@ -22,7 +22,7 @@
                 </li>
                 <!-- .mv-slider-item-->
 
-                <li class="mv-slider-item"><img src="{{ env('APP_ASSET') }}assets/images/slideshow/slide_1920x1080.png" alt="slide"
+                <li class="mv-slider-item"><img src="{{ env('APP_ASSET') }}assets/images/slideshow/slide2_1920x1080.png" alt="slide"
                         class="mv-slider-img" />
                     <div class="mv-caption-style-1">
                         <div class="container">
@@ -40,7 +40,7 @@
                 </li>
                 <!-- .mv-slider-item-->
 
-                <li class="mv-slider-item"><img src="{{ env('APP_ASSET') }}assets/images/slideshow/slide_1920x1080.png" alt="slide"
+                <li class="mv-slider-item"><img src="{{ env('APP_ASSET') }}assets/images/slideshow/slide3_1920x1080.png" alt="slide"
                         class="mv-slider-img" />
                     <div class="mv-caption-style-1">
                         <div class="container">
