@@ -19,14 +19,6 @@
                         <img id="image" src="{{ env('APP_ASSET') }}images/product_img/{{$product[0]->pro_img}}"
                             alt="Product">
                     </a>
-                    {{-- <div class="product-thumb">
-                                      <ul class="thumb-content">
-                                          <li class="thumb active images"><a href="assets/images/product-details1.jpg" title="thumb product view1" onclick="swap(this);return false;"><img src="assets/images/product-details1.jpg" alt="thumb product1"></a></li>
-                                          <li class="thumb images"><a href="assets/images/product-details1.jpg" title="thumb product view1" onclick="swap(this);return false;"><img src="assets/images/product-details1.jpg" alt="thumb product2"></a></li>
-                                          <li class="thumb images"><a href="assets/images/product-details1.jpg" title="thumb product view1" onclick="swap(this);return false;"><img src="assets/images/product-details1.jpg" alt="thumb product3"></a></li>
-                                          <li class="thumb images"><a href="assets/images/product-details1.jpg" title="thumb product view1" onclick="swap(this);return false;"><img src="assets/images/product-details1.jpg" alt="thumb product4"></a></li>
-                                      </ul>
-                                  </div> --}}
                 </div>
                 <!-- End product-img-box -->
                 <div class="share-tags">
