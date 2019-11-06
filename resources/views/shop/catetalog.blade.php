@@ -94,7 +94,7 @@
                     <li><a href="#">5</a></li>
                     <li class="next"><a href="#">next</a></li>
                   </ul> --}}
-                  {{}}
+                 
                 </div>
                 <!-- .mv-pagination-style-1-->
               </div>
