@@ -913,7 +913,7 @@
                 dataType: "json",
                 success: (data) => {
                     console.log(data)
-                    let path = "{{ env('APP_ASSET') }}assets/"
+                    let path = "{{ env('APP_ASSET') }}"
                     let len = data.cart_list.length
                     let str = '',
                         total = 0;
