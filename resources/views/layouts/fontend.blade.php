@@ -219,7 +219,7 @@
 
                                                 <div class="block-39-footer">
                                                     <div class="row">
-                                                        <div class="col-xs-6"><a href="cart.html"
+                                                    <div class="col-xs-6"><a href="{{route('cart')}}"
                                                                 class="mv-btn mv-btn-style-5 btn-5-h-45 btn-5-gray responsive-btn-5-type-2 mv-btn-block">view
                                                                 cart</a></div>
                                                         <div class="col-xs-6"><a href="checkout.html"
@@ -495,9 +495,9 @@
                     <div class="mv-aside mv-aside-search">
                         <div class="aside-title mv-title-style-11">search</div>
                         <div class="aside-body">
-                            <form method="GET" class="form-aside-search">
+                        <form method="GET" action="{{route('pro_all')}}" class="form-aside-search">
                                 <div class="mv-inputbox-icon right">
-                                    <input type="text" name="test138" class="mv-inputbox mv-inputbox-style-2" />
+                                    <input type="text" name="pro_name" class="mv-inputbox mv-inputbox-style-2" />
                                     <button type="submit" class="icon mv-btn mv-btn-style-4 fa fa-search"></button>
                                 </div>
                             </form>
@@ -837,9 +837,9 @@
             class="popup-search modal fade modal-effect-zoom mv-modal-style-2">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <form method="GET" action="/motor_vehikal_html/search.html" class="form-search">
+                <form method="GET" action="{{route('pro_all')}}" class="form-search">
                         <div class="mv-inputbox-icon right">
-                            <input type="text" name="test138" data-mv-placeholder="Type here and enter to search"
+                            <input type="text" name="pro_name" data-mv-placeholder="Type here and enter to search"
                                 placeholder="Type here and enter to search" class="mv-inputbox mv-inputbox-style-5" />
                             <button type="submit" class="icon mv-btn mv-btn-style-4"><i
                                     class="fa fa-search"></i></button>

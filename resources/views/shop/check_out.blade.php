@@ -2,16 +2,27 @@
 
 @section('contents')
 
-<div class="breadcrumb">
-        <div class="container">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li class="active">Blog Details</li>
-            </ul>
+<section class="main-banner mv-wrap">
+        <div data-image-src="images/background/demo_bg_1920x1680.png" class="mv-banner-style-1 mv-bg-overlay-dark overlay-0-85 mv-parallax">
+          <div class="page-name mv-caption-style-6">
+            <div class="container">
+              <div class="mv-title-style-9"><span class="main">Checkout</span><img src="images/icon/icon_line_polygon_line.png" alt="icon" class="line"></div>
+            </div>
+          </div>
         </div>
-        <!-- End container -->
-    </div>
+      </section>
 
+      <section class="main-breadcrumb mv-wrap">
+            <div class="mv-breadcrumb-style-1">
+              <div class="container">
+                <ul class="breadcrumb-1-list">
+                  <li><a href="home.html"><i class="fa fa-home"></i></a></li>
+                  <li><a>Checkout</a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+<br><br><br><br>
 <section id="shopcart" class="shop shop-cart">
     <div class="container">
         <div class="row">
@@ -47,7 +58,7 @@
                     <table class="table table-bordered">
                         <thead>
                             <tr class="cart-product">
-                                <th class="cart-product-item">Product</th>
+                                <th class="cart-product-item" width="30%">Product</th>
                                 <th class="cart-product-item">Product name</th>
                                 <th class="cart-product-price">Price</th>
                                 <th class="cart-product-quantity">Quantity</th>
@@ -87,6 +98,7 @@
         </div>
     </div>
 </section>
+<br><br><br>
 
 @endsection
 
@@ -113,7 +125,7 @@
                     str += '<tr class="cart-product">'
                     str += '<td class="cart-product-item">'
                     str += '<div class="cart-product-img" width="10%">'
-                    str += '<img src="' + path + 'images/product_img/' + data.cart_list[i].pro_img +
+                    str += '<img width="100%" src="' + path + 'images/product_img/' + data.cart_list[i].pro_img +
                         '" alt="product" style="width: 80%">'
                     str += '</div>'
                     str += '<div class="cart-product-name">'

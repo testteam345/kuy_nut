@@ -1290,7 +1290,8 @@ $(document).ready(function() {
     if (!$('.input-quantity-cart').length) return;
 
     $('.input-quantity-cart').each(function() {
-      var inputQuantity = $(this);
+      // setTimeout(() => {
+         var inputQuantity = $(this);
       var wraper = inputQuantity.closest('.calculate-price-wrapper');
       var unit = wraper.find('.calculate-price-unit');
       var output = wraper.find('.calculate-price-output');
@@ -1318,6 +1319,8 @@ $(document).ready(function() {
           output.text(outputNum.toFixed(2));
         }
       });
+      // }, 5000);
+     
     });    
   })(jQuery);
 

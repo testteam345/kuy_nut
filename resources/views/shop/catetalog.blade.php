@@ -36,29 +36,11 @@
 
                                         <div onclick="$(this).remove()"
                                             class="content-sale-off mv-label-style-2 text-center">
-                                            {{-- <div class="label-2-inner">
-                              <ul class="label-2-ul">
-                                <li class="number">-25%</li>
-                                <li class="text">sale</li>
-                              </ul>
-                            </div> --}}
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="content-default">
-                                    {{-- <div data-rate="true" data-score="5.0" class="content-rate mv-rate text-center">
-                                        <div class="rate-inner mv-f-14">
-                                            <div class="stars-wrapper empty-stars"><span class="item-rate"></span><span
-                                                    class="item-rate"></span><span class="item-rate"></span><span
-                                                    class="item-rate"></span><span class="item-rate"></span></div>
-                                            <div class="stars-wrapper filled-stars" style="width: 100%;"><span
-                                                    class="item-rate"></span><span class="item-rate"></span><span
-                                                    class="item-rate"></span><span class="item-rate"></span><span
-                                                    class="item-rate"></span></div>
-                                        </div>
-                                    </div> --}}
-
                                     <div class="content-price"><span class="new-price">฿ {{$product->pro_price}}</span>
                                     </div>
                                     <div class="content-desc"><a href="#"

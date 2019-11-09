@@ -26,13 +26,13 @@
                                         <div class="slider gallery-main">
                                             <div class="slick-slide">
                                                 <div class="slick-slide-inner"><a
-                                                        href="{{ env('APP_ASSET') }}assets/images/demo/demo_370x530.png"
+                                                        href="{{ env('APP_ASSET') }}images/product_img/{{$product[0]->pro_img}}"
                                                         title="" class="mv-lightbox-item"><img
-                                                            src="{{ env('APP_ASSET') }}assets/images/demo/demo_370x530.png" alt="demo"
+                                                            src="{{ env('APP_ASSET') }}images/product_img/{{$product[0]->pro_img}}" alt="demo"
                                                             class="block-26-main-img" /></a></div>
                                             </div>
                                             <!-- .slick-slide-->
-
+<input type="hidden" name="pro_id_hidden" id="pro_id_hidden" value="{{$product[0]->pro_id}}">
                                         </div>
                                     </div>
                                 </div>
@@ -58,169 +58,6 @@
                                 <div class="block-27-info">
                                     <div class="block-27-title">{{$product[0]->pro_name}}</div>
 
-                                    <div class="block-27-rate clearfix">
-                                        <div class="dropdown mv-dropdown-style-1 script-dropdown-2"><a
-                                                href="#customer-review" class="btn-dropdown"><span data-rate="true"
-                                                    data-score="4.6" class="mv-rate"><span
-                                                        class="rate-inner mv-f-14 text-left"><span
-                                                            class="stars-wrapper empty-stars"><span
-                                                                class="item-rate"></span><span
-                                                                class="item-rate"></span><span
-                                                                class="item-rate"></span><span
-                                                                class="item-rate"></span><span
-                                                                class="item-rate"></span></span><span
-                                                            class="stars-wrapper filled-stars"><span
-                                                                class="item-rate"></span><span
-                                                                class="item-rate"></span><span
-                                                                class="item-rate"></span><span
-                                                                class="item-rate"></span><span
-                                                                class="item-rate"></span></span></span><span
-                                                        class="rate-score">(<span
-                                                            class="score-number">4.4</span>)</span></span></a>
-                                            <div class="dropdown-menu">
-                                                <div class="dropdown-menu-inner">
-                                                    <div class="mv-block-style-42">
-                                                        <div class="block-42-header text-center">4.4 out of 5 stars
-                                                        </div>
-                                                        <div class="block-42-body">
-                                                            <div class="block-42-list">
-
-                                                                <div class="item">
-                                                                    <div class="mv-dp-table align-middle">
-                                                                        <div class="mv-dp-table-cell col-type-star">
-                                                                            <div class="title-type-star"> <strong>5
-                                                                                    star</strong></div>
-                                                                        </div>
-                                                                        <div class="mv-dp-table-cell col-progress-bar">
-                                                                            <div class="mv-progress-bar thick-bars">
-                                                                                <div class="progress">
-                                                                                    <div style="width: 69%;"
-                                                                                        class="progress-bar-wrap">
-                                                                                        <div
-                                                                                            class="progress-bar progress-bar-primary mv-animated">
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="mv-dp-table-cell col-percent">
-                                                                            <div class="title-percent">69%</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- .item-->
-
-                                                                <div class="item">
-                                                                    <div class="mv-dp-table align-middle">
-                                                                        <div class="mv-dp-table-cell col-type-star">
-                                                                            <div class="title-type-star"> <strong>4
-                                                                                    star</strong></div>
-                                                                        </div>
-                                                                        <div class="mv-dp-table-cell col-progress-bar">
-                                                                            <div class="mv-progress-bar thick-bars">
-                                                                                <div class="progress">
-                                                                                    <div style="width: 11%;"
-                                                                                        class="progress-bar-wrap">
-                                                                                        <div
-                                                                                            class="progress-bar progress-bar-primary mv-animated">
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="mv-dp-table-cell col-percent">
-                                                                            <div class="title-percent">11%</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- .item-->
-
-                                                                <div class="item">
-                                                                    <div class="mv-dp-table align-middle">
-                                                                        <div class="mv-dp-table-cell col-type-star">
-                                                                            <div class="title-type-star"> <strong>3
-                                                                                    star</strong></div>
-                                                                        </div>
-                                                                        <div class="mv-dp-table-cell col-progress-bar">
-                                                                            <div class="mv-progress-bar thick-bars">
-                                                                                <div class="progress">
-                                                                                    <div style="width: 6%;"
-                                                                                        class="progress-bar-wrap">
-                                                                                        <div
-                                                                                            class="progress-bar progress-bar-primary mv-animated">
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="mv-dp-table-cell col-percent">
-                                                                            <div class="title-percent">6%</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- .item-->
-
-                                                                <div class="item">
-                                                                    <div class="mv-dp-table align-middle">
-                                                                        <div class="mv-dp-table-cell col-type-star">
-                                                                            <div class="title-type-star"> <strong>2
-                                                                                    star</strong></div>
-                                                                        </div>
-                                                                        <div class="mv-dp-table-cell col-progress-bar">
-                                                                            <div class="mv-progress-bar thick-bars">
-                                                                                <div class="progress">
-                                                                                    <div style="width: 4%;"
-                                                                                        class="progress-bar-wrap">
-                                                                                        <div
-                                                                                            class="progress-bar progress-bar-primary mv-animated">
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="mv-dp-table-cell col-percent">
-                                                                            <div class="title-percent">4%</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- .item-->
-
-                                                                <div class="item">
-                                                                    <div class="mv-dp-table align-middle">
-                                                                        <div class="mv-dp-table-cell col-type-star">
-                                                                            <div class="title-type-star"> <strong>1
-                                                                                    star</strong></div>
-                                                                        </div>
-                                                                        <div class="mv-dp-table-cell col-progress-bar">
-                                                                            <div class="mv-progress-bar thick-bars">
-                                                                                <div class="progress">
-                                                                                    <div style="width: 10%;"
-                                                                                        class="progress-bar-wrap">
-                                                                                        <div
-                                                                                            class="progress-bar progress-bar-primary mv-animated">
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="mv-dp-table-cell col-percent">
-                                                                            <div class="title-percent">10%</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- .item-->
-                                                            </div>
-                                                        </div>
-                                                        <div class="block-42-footer text-center"><a
-                                                                href="#customer-review" class="btn-see-all">See all 405
-                                                                reviews &nbsp;<i class="fa fa-caret-right"></i></a>
-                                                        </div>
-                                                    </div>
-                                                    <!-- .mv-block-style-42-->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
 
                                     <div class="block-27-price">
                                         <div class="new-price">฿{{$product[0]->pro_price}}</div>
@@ -333,7 +170,7 @@
                                                 style="background-image: url({{ env('APP_ASSET') }}assets/images/avatar/avatar_100x100.png);"
                                                 class="block-37-thumb-img"></span></a></div>
                                     <div class="block-37-main">
-                                        <div class="block-37-name"><a href="#">Roman Travis</a></div>
+                                        <div class="block-37-name"><a href="#">{{ Session::get('name') }}</a></div>
                                     </div>
                                 </div>
                                 <!-- .mv-block-style-37-->
@@ -350,22 +187,21 @@
                                                     <div class="stars-wrapper"><a class="item-rate"></a><a
                                                             class="item-rate"></a><a class="item-rate"></a><a
                                                             class="item-rate"></a><a class="item-rate"></a></div>
-                                                    <input type="hidden" name="test139" id="rate_hidden" class="input-score-rate" />
+                                                    <input type="hidden" name="rate_hidden" id="rate_hidden" class="input-score-rate" />
                                                 </div><span class="rate-text"></span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="mv-form-group">
                                         <div class="mv-field">
-                                            <textarea name="test138" data-mv-placeholder="Description"
+                                            <textarea name="review_content" id="review_content" data-mv-placeholder="Description"
                                                 placeholder="Description"
                                                 class="mv-resize-vertical mv-inputbox mv-inputbox-style-1 textarea-desc"></textarea>
                                         </div>
                                     </div>
                                     <div class="mv-form-group text-right">
                                         <div class="mv-field">
-                                            <button type="submit"
-                                                class="mv-btn mv-btn-style-5 responsive-btn-5-type-2">Submit</button>
+                                            <button type="button" class="mv-btn mv-btn-style-5 responsive-btn-5-type-2" onclick="post_review({{ Session::get('user_id')}},{{$product[0]->pro_id}})">Submit</button>
                                         </div>
                                     </div>
                                 </form>
@@ -373,7 +209,7 @@
                             <!--.review-rating-field-->
 
                             <div class="review-list mv-block-style-28">
-                                <div class="block-28-list">
+                                <div class="block-28-list" id="review_show">
                                     <div class="item">
                                         <div class="mv-dp-table">
                                             <div class="mv-dp-table-cell block-28-thumb"><a href="#"><span
@@ -383,20 +219,23 @@
                                                 <div class="block-28-main-header">
                                                     <div class="block-28-name"><a href="#">Jonathan Doe</a></div><span
                                                         class="block-28-date">December 21, 2016</span>
-                                                    <div data-rate="true" data-score="4" class="block-28-rate mv-rate">
+                                                    <div data-rate="true" data-score="1" class="block-28-rate mv-rate">
                                                         <div class="rate-inner mv-f-14 text-left">
-                                                            <div class="stars-wrapper empty-stars"><span
-                                                                    class="item-rate"></span><span
-                                                                    class="item-rate"></span><span
-                                                                    class="item-rate"></span><span
-                                                                    class="item-rate"></span><span
-                                                                    class="item-rate"></span></div>
-                                                            <div class="stars-wrapper filled-stars"><span
-                                                                    class="item-rate"></span><span
-                                                                    class="item-rate"></span><span
-                                                                    class="item-rate"></span><span
-                                                                    class="item-rate"></span><span
-                                                                    class="item-rate"></span></div>
+                                                            <div class="stars-wrapper empty-stars">
+                                                                <span
+                                                                    class="item-rate"></span>
+                                                                    <span class="item-rate"></span>
+                                                                    <span class="item-rate"></span>
+                                                                    <span class="item-rate"></span>
+                                                                    <span class="item-rate"></span>
+                                                                </div>
+                                                                <div class="stars-wrapper filled-stars">
+                                                                    <span class="item-rate"></span>
+                                                                    <span class="item-rate"></span>
+                                                                    <span class="item-rate"></span>
+                                                                    <span class="item-rate"></span>
+                                                                    <span class="item-rate"></span>
+                                                                </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -453,22 +292,7 @@
                             </div>
                             <!-- .review-list-->
 
-                            <div class="review-pagination">
-                                <div class="mv-pagination-style-2 text-right">
-                                    <ul class="pagination">
-                                        <li class="first"><a href="#" class="fa fa-angle-double-left"></a></li>
-                                        <li class="prev"><a href="#" class="fa fa-angle-left"></a></li>
-                                        <li><a href="#">1</a></li>
-                                        <li><a href="#">2</a></li>
-                                        <li class="active"><a>3</a></li>
-                                        <li><a href="#">4</a></li>
-                                        <li><a href="#">5</a></li>
-                                        <li class="next"><a href="#" class="fa fa-angle-right"></a></li>
-                                        <li class="last"><a href="#" class="fa fa-angle-double-right"></a></li>
-                                    </ul>
-                                </div>
-                                <!-- .mv-pagination-style-2-->
-                            </div>
+                     
                             <!-- .review-pagination-->
                         </div>
                     </div>
@@ -529,58 +353,44 @@
                 data = data.data
                 let rate_total = 0;
                 for (let i = 0; i < data.length; i++) {
-                    str += '<li class="media images">'
-                    str += '<a class="pull-left" href="#">'
-                    str +=
-                        '<img class="media-object img-circle" src="{{ env("APP_ASSET") }}assets/images/avatar1.jpg" alt="images">'
-                    str += '</a>'
-                    str += '<div class="media-body">'
-                    str += '<p class="date">' + formatDate(new Date(data[i].create_date)) + '</p>'
-                    str += '<h4 class="media-heading">' + data[i].name + '</h4>'
-                    str += '<p>'
-                    str += data[i].review_content
-                    str += '</p>'
-                    str += '<p class="tags">'
-                    str += '</p>'
-                    str += '</div>'
-                    str += '</li>'
-                    rate_total += parseInt(data[i].review_rate);
-                }
-                avg = rate_total / data.length;
-                console.log(avg)
-                if (avg <= 1) {
-                    console.log(1)
-                    $('#bird-horizontal-rating-5-avg').prop('checked', true)
-                } else if (avg < 2) {
-                    console.log(2)
-                    $('#bird-horizontal-rating-4-avg').prop('checked', true)
-                } else if (avg < 3) {
-                    console.log(3)
-                    $('#bird-horizontal-rating-3-avg').prop('checked', true)
-                } else if (avg < 4) {
-                    console.log(4)
-                    $('#bird-horizontal-rating-2-avg').prop('checked', true)
-                } else {
-                    $('#bird-horizontal-rating-1-avg').prop('checked', true)
-                    console.log(5)
-                }
-                // $('input[name="bird-horizontal-rating-avg"]').val(avg)
-                $('#review_show').html(str);
-                // str = '';
-                // for (x = avg; x > 0; x--) {
-                //     str += '    <i class="fa fa-star"></i>'
-                // }
-                // let y = 3;
-                // y = (y - avg);
-                // str += '<i class="fa fa-star-half-o"></i>'
-                // for (y = y; y > 0; y--) {
-                //     str += '    <i class="fa fa-star-o"></i>'
-                // }
+                    let current_datetime = new Date(data[i].create_date)
+                    let formatted_date = current_datetime.getDate() + "/" + (current_datetime.getMonth() + 1) + "/" + current_datetime.getFullYear()
 
-                // $('#btn_revie').html('reviews(' + data.length + ')')
-                // $('#count_review').html('reviews(' + data.length + ')')
-                // $('#rate_views_total_avg').html(str);
-            },
+                str += '<div class="item">'
+                str += '<div class="mv-dp-table">'
+                str += '<div class="mv-dp-table-cell block-28-thumb"><a href="#"><span'
+                str += 'style="background-image: url(images/avatar/avatar_100x100.png);"'
+                str += 'class="block-28-thumb-img"></span></a></div>'
+                str += '<div class="mv-dp-table-cell block-28-main">'
+                str += '<div class="block-28-main-header">'
+                str += '<div class="block-28-name"><a href="#">' + data[i].name + '</a></div><span'
+                str += 'class="block-28-date">'+formatted_date+'</span>'
+                str += '    <span class="rate-inner mv-f-14 text-left">'
+                str += '        <span class="stars-wrapper empty-stars">'
+                str += '            <span class="item-rate"></span>'
+                str += '            <span class="item-rate"></span>'
+                str += '            <span class="item-rate"></span>'
+                str += '            <span class="item-rate"></span>'
+                str += '            <span class="item-rate"></span>'
+                str += '        </span>'
+                str += '        <span class="stars-wrapper filled-stars" style="width: '+((parseInt(data[i].review_rate)+5)*10)+'%;">'
+                str += '            <span class="item-rate"></span>'
+                str += '            <span class="item-rate"></span>'
+                str += '            <span class="item-rate"></span>'
+                str += '            <span class="item-rate"></span>'
+                str += '            <span class="item-rate"></span>'
+                str += '        </span>'
+                str += '    </span>'
+                str += '</div>'
+                str += '<div class="block-28-desc">'+data[i].review_content+'</div>'
+                str += '</div>'
+                str += '</div>'
+                str += '</div>'
+                 $('#review_show').html(str);
+                $('#btn_revie').html('reviews(' + data.length + ')')
+                $('#count_review').html('reviews(' + data.length + ')')
+                $('#rate_views_total_avg').html(str);
+            }},
             "json"
         );
     }
@@ -601,14 +411,14 @@
     }
 
     function post_review(user_id, pro_id) {
-        let review_content = $('#review_content').val()
-        let review_rate = $('input[name="rate_hidden"]').val()
+        let review_content = $('#review_content').val();
+        let review_rate = $('input[name="rate_hidden"]').val();
         let data = {
             pro_id: pro_id,
             user_id: user_id,
             review_content: review_content,
             review_rate: review_rate
-        }
+        };
         // console.log(review_rate);
         // return;
         $.post("{{route('post_review')}}", data,
@@ -619,6 +429,14 @@
             },
             "json"
         );
+
+        // $.post("url", data,
+        //     function (data, textStatus, jqXHR) {
+                
+        //     },
+        //     "dataType"
+        // );
+       
     }
 
 
