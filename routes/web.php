@@ -32,6 +32,8 @@ Route::get('/cart', function () {
     return view('shop.cart');
 })->name('cart');
 
+
+
 Route::group(['prefix' => 'shop'], function () {
     Route::group(['prefix' => 'catetalog'],function () {
         Route::get('all','ProductController@shop_list')->name('pro_all');

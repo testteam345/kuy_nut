@@ -19,6 +19,10 @@ Route::get('/register', function () {
     return view('register');
 });
 
+Route::get('/contact_pae', function () {
+    return view('contact.contact');
+})->name('contact_pae');
+
 Route::post('/getuser','UserController@login');
 Route::get('/logout','UserController@logout');
 Route::post('/getregister','UserController@register');
@@ -30,5 +34,5 @@ Route::group(['prefix' => 'how-to-buy'], function () {
 });
 
 Route::group(['prefix' => 'contact'], function () {
-    Route::get('/','AboutController@about')->name('abount');
+    Route::get('/','AboutController@about')->name('abount_pae');
 });
