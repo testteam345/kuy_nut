@@ -148,7 +148,7 @@
                 <div class="contact-us-map">
                   <div class="map-embed">
                     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-                    <div id="mv-map-canvas" data-latitude="33.9797094" data-longitude="-118.4653849" data-address="Latitude 33 - Sky Tower, Via Dolce, Marina del Rey, America"></div>
+                    <div id="mv-map-canvas" data-latitude="13.7021679" data-longitude="100.6761534" data-address="Latitude 33 - Sky Tower, Via Dolce, Marina del Rey, America"></div>
                   </div>
                 </div>
                 <!-- .contact-us-map-->
