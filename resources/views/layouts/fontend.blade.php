@@ -4,7 +4,7 @@
 <head>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta charset="UTF-8">
-    <title>Home 1 - Motor Vehikal</title>
+    <title>NY SHOP</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -64,11 +64,11 @@
                             <div class="mv-col-left header-contact">
                                 <ul class="mv-ul clearfix group-contact hidden-xs">
                                     <li class="item-button mv-icon-left-style-2"><span class="text"> <span
-                                                class="icon"><i class="fa fa-clock-o"></i></span>24/7 Support</span>
+                                                class="icon"><i class="fa fa-clock-o"></i></span>เวลาทำการ 9:00 น.-16:00</span>
                                     </li>
                                     <li class="item-button mv-icon-left-style-2"><a href="tel:(+800)123456789"
                                             class="text"> <span class="icon"><i
-                                                    class="fa fa-phone"></i></span>Telephone: (+800) 123 456 789</a>
+                                                    class="fa fa-phone"></i></span>เบอร์โทร: 095-9499104</a>
                                     </li>
                                 </ul>
                                 <ul class="mv-ul clearfix group-language">
@@ -159,81 +159,25 @@
                         <div class="main-nav-wrapper hidden-xs hidden-sm">
                             <nav class="main-nav">
                                 <ul class="nav sf-menu">
-                                    <li class="mega-columns"><a href="home.html"><span class="menu-text">Home <i
-                                                    class="menu-icon fa fa-angle-down"></i></span></a>
+                                    <li><a href="about-us.html"><span class="menu-text">หน้าแรก</span></a></li>
                                         
                                     </li>
-                                    <li><a href="#"><span class="menu-text">ถุงมือผู้รักษาประตู <i
+                                <li><a href="{{route('pro_all')}}"><span class="menu-text">ถุงมือผู้รักษาประตู <i
                                                     class="menu-icon fa fa-angle-down"></i></span></a>
                                         <ul>
-                                            <li><a href="product-list.html">Product List</a></li>
-                                            <li><a href="product-grid-2.html">Product Grid 2</a></li>
-                                            <li><a href="product-grid-3.html">Product Grid 3</a></li>
-                                            <li><a href="product-grid-3-no-sb.html">Product Grid 3 No Sidebar</a></li>
-                                            <li><a href="product-grid-4-no-sb.html">Product Grid 4 No Sidebar</a></li>
-                                            <li><a href="product-grid-5-fullwidth.html">Product Grid 5 Fullwidth</a>
-                                            </li>
-                                            <li><a href="product-detail.html">Product Detail</a></li>
-                                            <li><a href="product-detail-rated.html">Product Detail Rated</a></li>
-                                            <li><a href="search.html">Search</a></li>
+                                            <li><a href="product-list.html">ADIDAS</a></li>
+                                            <li><a href="product-grid-2.html">NIKE</a></li>
+                                            <li><a href="product-grid-3.html">UHLSPORT</a></li>
+                                            <li><a href="product-grid-3-no-sb.html">PUMA</a></li>
+                                            <li><a href="product-grid-4-no-sb.html">APD</a></li>
+                                            
                                         </ul>
                                     </li>
-                                    <li><a href="#"><span class="menu-text">สินค้าอื่นๆ <i
-                                                    class="menu-icon fa fa-angle-down"></i></span></a>
-                                        <ul>
-                                            <li><a href="cart.html">Cart</a></li>
-                                            <li><a href="checkout.html">Checkout</a></li>
-                                            <li><a href="wishlist.html">Wishlist</a></li>
-                                            <li><a href="compare.html">Compare</a></li>
-                                            <li><a href="track-your-order.html">Track Your Order</a></li>
-                                            <li><a href="cart-empty.html">Cart Empty</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#"><span class="menu-text">Blog <i
-                                                    class="menu-icon fa fa-angle-down"></i></span></a>
-                                        <ul>
-                                            <li><a href="blog-list.html">Blog List</a></li>
-                                            <li><a href="blog-grid-2.html">Blog Grid 2</a></li>
-                                            <li><a href="blog-grid-3-no-sb.html">Blog Grid 3 No Sidebar</a></li>
-                                            <li><a href="blog-grid-3-mansory-no-sb.html">Blog Grid 3 Mansory No
-                                                    Sidebar</a></li>
-                                            <li><a href="blog-detail.html">Blog Detail</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="about-us.html"><span class="menu-text">About Us</span></a></li>
-                                    <li><a href="contact.html"><span class="menu-text">Contact</span></a></li>
-                                    <li><a href="#"><span class="menu-text">Pages <i
-                                                    class="menu-icon fa fa-angle-down"></i></span></a>
-                                        <ul class="dropdown-left">
-                                            <li><a href="login.html">Login & Register</a></li>
-                                            <li><a href="forgot-password.html">Forgot Password</a></li>
-                                            <li><a href="faqs.html">Faqs</a></li>
-                                            <li><a href="newsletter.html">Newsletter</a></li>
-                                            <li><a href="shortcodes.html">Shortcodes</a></li>
-                                            <li><a href="common-element.html">Common Element</a></li>
-                                            <li><a href="error-page.html">Error Page</a></li>
-                                            <li><a href="#"><span class="menu-text">Example menu item <i
-                                                            class="menu-icon fa fa-angle-down"></i></span></a>
-                                                <ul>
-                                                    <li><a href="#">Example menu item</a></li>
-                                                    <li><a href="#"><span class="menu-text">Example menu item <i
-                                                                    class="menu-icon fa fa-angle-down"></i></span></a>
-                                                        <ul>
-                                                            <li><a href="#">Example menu item</a></li>
-                                                            <li><a href="#">Example menu item</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="#"><span class="menu-text">Example menu item <i
-                                                                    class="menu-icon fa fa-angle-down"></i></span></a>
-                                                        <ul class="dropdown-left">
-                                                            <li><a href="#">Example menu item</a></li>
-                                                            <li><a href="#">Example menu item</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
+                                
+                                    
+                                    <li><a href="about-us.html"><span class="menu-text">ผู้จัดทำ</span></a></li>
+                                    <li><a href="contact.html"><span class="menu-text">ติดต่อเรา</span></a></li>
+                                    
                                 </ul>
                             </nav>
                         </div>
@@ -253,10 +197,7 @@
                             <!-- .header-search-->
 
                             <div class="header-shop">
-                                <div class="item-button"><a href="wishlist.html"
-                                        class="mv-btn mv-btn-style-11 btn-my-wishlist"><span class="btn-inner"><span
-                                                class="icon fa fa-heart-o"></span><span
-                                                class="number">8</span></span></a></div>
+                                
 
                                 <div class="item-button dropdown mv-dropdown-style-1 script-dropdown-1">
                                     <button type="button" class="mv-btn mv-btn-style-11 btn-dropdown btn-my-cart"><span
@@ -321,8 +262,8 @@
                                                     <div class="mv-dp-table-cell icon"><i
                                                             class="icon-fa fa fa-map-marker mv-f-22 mv-color-primary"></i>
                                                     </div>
-                                                    <div class="mv-dp-table-cell text">123 Sky Tower address name, Los
-                                                        Algeles</div>
+                                                    <div class="mv-dp-table-cell text">262 เฉลิมพระเกียนติ ซ.53 
+                                                       <br>  แขวงประเวศ เขตประเวศ กรุงเทพฯ 10250</div>
                                                 </div>
                                             </li>
                                             <li class="mv-icon-left-style-1 item">
@@ -330,7 +271,7 @@
                                                     <div class="mv-dp-table-cell icon"><i
                                                             class="icon-fa fa fa-mobile mv-f-26 mv-color-primary"></i>
                                                     </div>
-                                                    <div class="mv-dp-table-cell text">PHONE : (012) 345 6789</div>
+                                                    <div class="mv-dp-table-cell text">เบอร์โทรศัพท์ : 095-9499-104</div>
                                                 </div>
                                             </li>
                                             <li class="mv-icon-left-style-1 item">
@@ -339,7 +280,7 @@
                                                             class="icon-fa fa fa-envelope-o mv-f-20 mv-color-primary"></i>
                                                     </div>
                                                     <div class="mv-dp-table-cell text">EMAIL:<a
-                                                            href="mailto:info@Juxdesign.com"> info@Juxdesign.com</a>
+                                                            href="mailto:info@Juxdesign.com"> nut.thammarat@gmail.com</a>
                                                     </div>
                                                 </div>
                                             </li>
@@ -349,14 +290,12 @@
 
                                 <div class="col-md-3 footer-nav-col footer-about-us"><a data-toggle="collapse"
                                         data-parent="#footerNav" href="#footerAboutUs" aria-expanded="false"
-                                        aria-controls="footerAboutUs" class="footer-title collapsed">about us</a>
+                                        aria-controls="footerAboutUs" class="footer-title collapsed">จัดทำโดย</a>
                                     <div id="footerAboutUs" role="tabpanel" class="footer-main collapse">
                                         <div class="footer-main-inner">
                                             <div class="about-us-content">
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                                                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
-                                                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-                                                    suscipit lobortis nisl ut aliquip</p>
+                                                <p>นายธรรมรัตน์ เสาโมก ชั้น ปวส.2/4 เลขที่ 38 สาขาคอมพิวเตอร์ธุรกิจ <br> <br> นายญาณพล สะเดา ชั้น ปวส.2/4 เลขที่ 2 สาขาคอมพิวเตอร์ธุรกิจ</p>
+                                                <p>วิทยาลัยเทคโนโลยีอรรถวิทย์พณิชยการ</p>
                                             </div>
                                         </div>
                                     </div>
@@ -417,21 +356,7 @@
                         </div>
                         <!-- .footer-nav-->
 
-                        <div class="footer-payment">
-                            <ul class="mv-ul list">
-                                <li class="item"><a href="#"><img src="{{ env('APP_ASSET') }}assets/images/icon/icon_paypal.png" alt="icon" /></a>
-                                </li>
-                                <li class="item"><a href="#"><img src="{{ env('APP_ASSET') }}assets/images/icon/icon_master_card.png"
-                                            alt="icon" /></a></li>
-                                <li class="item"><a href="#"><img src="{{ env('APP_ASSET') }}assets/images/icon/icon_american_express.png"
-                                            alt="icon" /></a></li>
-                                <li class="item"><a href="#"><img src="{{ env('APP_ASSET') }}assets/images/icon/icon_visa.png" alt="icon" /></a></li>
-                            </ul>
-                        </div>
-                        <!-- .footer-payment-->
-
-                        <div class="footer-copyright text-center">Copyright &copy; 2016 Motor Vehikal by<a
-                                href="http://www.joomlaux.com/" target="_blank"> JUXdesign.</a> All Rights Reserved.
+                        <div class="footer-copyright text-center">Copyright &copy; 2019 Thammarat&Yanapol
                         </div>
                         <!-- .footer-copyright-->
                     </div>

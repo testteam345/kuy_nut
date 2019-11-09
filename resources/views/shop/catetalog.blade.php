@@ -2,25 +2,14 @@
 {{-- @extends('layouts.master') --}}
 @section('contents')
 <div data-image-src="{{ env('APP_ASSET') }}images/background/demo_bg_1920x1680.png"
-    class="mv-banner-style-1 mv-bg-overlay-dark overlay-0-85 mv-parallax">
+    class="mv-banner-style-1 mv-bg-overlay-dark overlay-0-100 mv-parallax">
     <div class="page-name mv-caption-style-6">
         <div class="container">
-            <div class="mv-title-style-9"><span class="main">product 5 columns</span><img
-                    src="{{ env('APP_ASSET') }}images/icon/icon_line_polygon_line.png" alt="icon" class="line"></div>
+        
         </div>
     </div>
 </div>
-<section class="main-breadcrumb mv-wrap">
-    <div class="mv-breadcrumb-style-1">
-        <div class="container">
-            <ul class="breadcrumb-1-list">
-                <li><a href="home.html"><i class="fa fa-home"></i></a></li>
-                <li><a href="product-grid-3.html">Product</a></li>
-                <li><a>Product 5 columns fullwidth</a></li>
-            </ul>
-        </div>
-    </div>
-</section>
+
 
 <section class="mv-main-body product-grid-3-main mv-bg-gray mv-wrap">
         <div class="container">
@@ -126,7 +115,7 @@
                           <div class="slider-range ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 100%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 100%;"></span></div>
                         </div>
                         <div class="mv-dp-table align-middle">
-                          <div class="mv-dp-table-cell view-values">Price: $<span class="min-value">10</span> - $<span class="max-value">5000</span></div>
+                          <div class="mv-dp-table-cell view-values">Price: ฿<span class="min-value">100</span> - ฿<span class="max-value">10000</span></div>
                           <div class="mv-dp-table-cell filter-button">
                             <button type="submit" class="mv-btn mv-btn-style-5 btn-5-h-30">filter</button>
                           </div>
@@ -136,188 +125,24 @@
 
                     <nav class="filter-by-price-menu mv-menu-style-1">
                       <ul>
-                        <li><a href="#" class="mv-icon-left-style-5">$10 - $50<span class="sub-text">&nbsp; (8)</span></a></li>
-                        <li><a href="#" class="mv-icon-left-style-5">$50 - $100<span class="sub-text">&nbsp; (8)</span></a></li>
-                        <li><a href="#" class="mv-icon-left-style-5">$100 - $500<span class="sub-text">&nbsp; (3)</span></a></li>
-                        <li><a href="#" class="mv-icon-left-style-5">$500 - $1000<span class="sub-text">&nbsp; (16)</span></a></li>
-                        <li><a href="#" class="mv-icon-left-style-5">$1000 - $5000<span class="sub-text">&nbsp; (6)</span></a></li>
+                        <li><a href="#" class="mv-icon-left-style-5">฿100 - ฿500<span class="sub-text">&nbsp; (8)</span></a></li>
+                        <li><a href="#" class="mv-icon-left-style-5">฿500 - ฿1000<span class="sub-text">&nbsp; (8)</span></a></li>
+                        <li><a href="#" class="mv-icon-left-style-5">฿1000 - ฿2000<span class="sub-text">&nbsp; (3)</span></a></li>
+                        <li><a href="#" class="mv-icon-left-style-5">฿2000 - ฿3000<span class="sub-text">&nbsp; (16)</span></a></li>
+                        <li><a href="#" class="mv-icon-left-style-5">฿3000 - ฿10000<span class="sub-text">&nbsp; (6)</span></a></li>
                       </ul>
                     </nav>
                   </div>
                 </div>
                 <!-- .mv-aside-filter-by-price-->
-
-                <div class="mv-aside mv-aside-product-type">
-                  <div class="aside-title mv-title-style-11">product type</div>
-                  <div class="aside-body">
-                    <nav class="product-type-menu mv-menu-style-1">
-                      <ul>
-                        <li><a href="#" class="mv-icon-left-style-5">Full Face Helmets<span class="sub-text">&nbsp; (8)</span></a></li>
-                        <li><a href="#" class="mv-icon-left-style-5">Flip Up Helmets<span class="sub-text">&nbsp; (3)</span></a></li>
-                        <li><a href="#" class="mv-icon-left-style-5">Open Face Helmets<span class="sub-text">&nbsp; (38)</span></a></li>
-                        <li><a href="#" class="mv-icon-left-style-5">Adventure Helmets<span class="sub-text">&nbsp; (12)</span></a>
-                          <ul class="sub-menu">
-                            <li><a href="#" class="mv-icon-left-style-5">AGV Helmets<span class="sub-text">&nbsp; (3)</span></a></li>
-                            <li><a href="#" class="mv-icon-left-style-5">Arai Helmets<span class="sub-text">&nbsp; (12)</span></a></li>
-                            <li class="active"><a href="#" class="mv-icon-left-style-5">Bell Helmets<span class="sub-text">&nbsp; (8)</span></a></li>
-                            <li><a href="#" class="mv-icon-left-style-5">BOX Helmets<span class="sub-text">&nbsp; (15)</span></a></li>
-                          </ul>
-                        </li>
-                        <li><a href="#" class="mv-icon-left-style-5">Trousers<span class="sub-text">&nbsp; (19)</span></a></li>
-                        <li><a href="#" class="mv-icon-left-style-5">Dresses<span class="sub-text">&nbsp; (34)</span></a></li>
-                        <li><a href="#" class="mv-icon-left-style-5">Shoes<span class="sub-text">&nbsp; (22)</span></a></li>
-                        <li><a href="#" class="mv-icon-left-style-5">Accessories<span class="sub-text">&nbsp; (17)</span></a></li>
-                        <li><a href="#" class="mv-icon-left-style-5">Sale<span class="sub-text">&nbsp; (3)</span></a></li>
-                        <li><a href="#" class="mv-icon-left-style-5"> <strong>View More</strong><span class="sub-text">&nbsp; (50) &nbsp;</span><i class="fa fa-caret-down"></i></a></li>
-                      </ul>
-                    </nav>
-                  </div>
-                </div>
-                <!-- .mv-aside-product-type-->
-
-                <div class="mv-aside mv-aside-filter-by-size">
-                  <div class="aside-title mv-title-style-11">filter by</div>
-                  <div class="aside-body">
-                    <nav class="filter-by-price-menu mv-menu-style-1">
-                      <ul>
-                        <li><a href="#" class="mv-icon-left-style-5">Extra Large</a></li>
-                        <li><a href="#" class="mv-icon-left-style-5">Extra Small</a></li>
-                        <li class="active"><a href="#" class="mv-icon-left-style-5">Large</a></li>
-                        <li><a href="#" class="mv-icon-left-style-5">Medium</a></li>
-                        <li><a href="#" class="mv-icon-left-style-5">One Size Fits All</a></li>
-                        <li><a href="#" class="mv-icon-left-style-5">Small</a></li>
-                        <li><a href="#" class="mv-icon-left-style-5">Taille Unique</a></li>
-                        <li><a href="#" class="mv-icon-left-style-5">Sale</a></li>
-                      </ul>
-                    </nav>
-                  </div>
-                </div>
-                <!-- .mv-aside-filter-by-size-->
-
-                <div class="mv-aside mv-aside-size">
-                  <div class="aside-title mv-title-style-11">size</div>
-                  <div class="aside-body">
-                    <nav class="size-list">
-                      <div class="mv-btn-group">
-                        <div class="group-inner"><a href="#" class="mv-btn mv-btn-style-21">XXL</a><a href="#" class="mv-btn mv-btn-style-21 active">XL</a><a href="#" class="mv-btn mv-btn-style-21">L</a><a href="#" class="mv-btn mv-btn-style-21">M</a><a href="#" class="mv-btn mv-btn-style-21">S</a></div>
-                      </div>
-                    </nav>
-                  </div>
-                </div>
-                <!-- .mv-aside-size-->
-
-                <div class="mv-aside mv-aside-color">
-                  <div class="aside-title mv-title-style-11">color</div>
-                  <div class="aside-body">
-                    <div class="color-list mv-list-inline-style-1 space-10">
-                      <ul class="list-inline-1">
-                        <li class="active"><a href="#"><span style="background-color: #7bef66;" class="icon-color"></span></a></li>
-                        <li><a href="#"><span style="background-color: #ff8888;" class="icon-color"></span></a></li>
-                        <li><a href="#"><span style="background-color: #c4dd66;" class="icon-color"></span></a></li>
-                        <li><a href="#"><span style="background-color: #94b7f7;" class="icon-color"></span></a></li>
-                        <li><a href="#"><span style="background-color: #a3fbff;" class="icon-color"></span></a></li>
-                        <li><a href="#"><span style="background-color: #f7fb0d;" class="icon-color"></span></a></li>
-                        <li><a href="#"><span style="background-color: #7b7878;" class="icon-color"></span></a></li>
-                        <li><a href="#"><span style="background-color: #d041ff;" class="icon-color"></span></a></li>
-                        <li><a href="#"><span style="background-color: #fdab14;" class="icon-color"></span></a></li>
-                        <li><a href="#"><span style="background-color: #eeeeee" class="icon-color"></span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!-- .mv-aside-color-->
-
-                <div class="mv-aside mv-aside-products">
-                  <div class="aside-title mv-title-style-11">products</div>
-                  <div class="aside-body">
-                    <div class="products-list">
-                      <div class="mv-block-style-24">
-                        <div class="block-24-list">
-                          <article class="item post">
-                            <div class="item-inner">
-                              <div class="mv-dp-table">
-                                <div class="mv-dp-table-cell block-24-thumb">
-                                  <div class="thumb-inner mv-lightbox-style-1"><a href="product-detail.html" title="Open Face Helmets"><img src="images/demo/demo_300x400.png" alt="demo"></a><a href="images/demo/demo_300x400.png" title="Open Face Helmets" data-lightbox-href="product-detail.html" class="mv-btn mv-btn-style-20 mv-lightbox-item"><i class="icon fa fa-search"></i></a></div>
-                                </div>
-                                <div class="mv-dp-table-cell block-24-main">
-                                  <div class="block-24-title"><a href="product-detail.html" title="Open Face Helmets" class="mv-overflow-ellipsis">Open Face Helmets</a></div>
-                                  <div class="block-24-price">
-                                    <div class="new-price">$200,00</div>
-                                    <div class="old-price">$250,99</div>
-                                  </div>
-                                  <div data-rate="true" data-score="4.0" class="block-24-rate mv-rate text-left">
-                                    <div class="rate-inner mv-f-12">
-                                      <div class="stars-wrapper empty-stars"><span class="item-rate"></span><span class="item-rate"></span><span class="item-rate"></span><span class="item-rate"></span><span class="item-rate"></span></div>
-                                      <div class="stars-wrapper filled-stars" style="width: 80%;"><span class="item-rate"></span><span class="item-rate"></span><span class="item-rate"></span><span class="item-rate"></span><span class="item-rate"></span></div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </article>
-                          <!-- .post-->
-
-                          <article class="item post">
-                            <div class="item-inner">
-                              <div class="mv-dp-table">
-                                <div class="mv-dp-table-cell block-24-thumb">
-                                  <div class="thumb-inner mv-lightbox-style-1"><a href="product-detail.html" title="Spada Enforcer WP"><img src="images/demo/demo_300x400.png" alt="demo"></a><a href="images/demo/demo_300x400.png" title="Spada Enforcer WP" data-lightbox-href="product-detail.html" class="mv-btn mv-btn-style-20 mv-lightbox-item"><i class="icon fa fa-search"></i></a></div>
-                                </div>
-                                <div class="mv-dp-table-cell block-24-main">
-                                  <div class="block-24-title"><a href="product-detail.html" title="Spada Enforcer WP" class="mv-overflow-ellipsis">Spada Enforcer WP Spada Enforcer WP</a></div>
-                                  <div class="block-24-price">
-                                    <div class="new-price">$300,00</div>
-                                    <div class="old-price">$400,99</div>
-                                  </div>
-                                  <div data-rate="true" data-score="5.0" class="block-24-rate mv-rate text-left">
-                                    <div class="rate-inner mv-f-12">
-                                      <div class="stars-wrapper empty-stars"><span class="item-rate"></span><span class="item-rate"></span><span class="item-rate"></span><span class="item-rate"></span><span class="item-rate"></span></div>
-                                      <div class="stars-wrapper filled-stars" style="width: 100%;"><span class="item-rate"></span><span class="item-rate"></span><span class="item-rate"></span><span class="item-rate"></span><span class="item-rate"></span></div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </article>
-                          <!-- .post-->
-
-                          <article class="item post">
-                            <div class="item-inner">
-                              <div class="mv-dp-table">
-                                <div class="mv-dp-table-cell block-24-thumb">
-                                  <div class="thumb-inner mv-lightbox-style-1"><a href="product-detail.html" title="Richa Drift Water"><img src="images/demo/demo_300x400.png" alt="demo"></a><a href="images/demo/demo_300x400.png" title="Richa Drift Water" data-lightbox-href="product-detail.html" class="mv-btn mv-btn-style-20 mv-lightbox-item"><i class="icon fa fa-search"></i></a></div>
-                                </div>
-                                <div class="mv-dp-table-cell block-24-main">
-                                  <div class="block-24-title"><a href="product-detail.html" title="Richa Drift Water" class="mv-overflow-ellipsis">Richa Drift Water</a></div>
-                                  <div class="block-24-price">
-                                    <div class="new-price">$210,00</div>
-                                    <div class="old-price">$290,99</div>
-                                  </div>
-                                  <div data-rate="true" data-score="3.0" class="block-24-rate mv-rate text-left">
-                                    <div class="rate-inner mv-f-12">
-                                      <div class="stars-wrapper empty-stars"><span class="item-rate"></span><span class="item-rate"></span><span class="item-rate"></span><span class="item-rate"></span><span class="item-rate"></span></div>
-                                      <div class="stars-wrapper filled-stars" style="width: 60%;"><span class="item-rate"></span><span class="item-rate"></span><span class="item-rate"></span><span class="item-rate"></span><span class="item-rate"></span></div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </article>
-                          <!-- .post-->
-                        </div>
-                      </div>
-                      <!-- .mv-block-style-24-->
-                    </div>
-                  </div>
-                </div>
-                <!-- .mv-aside-products-->
+              
 
                 <div class="mv-aside mv-aside-tags">
                   <div class="aside-title mv-title-style-11">tags</div>
                   <div class="aside-body">
                     <div class="tag-list">
                       <div class="mv-btn-group">
-                        <div class="group-inner"><a href="#" class="mv-btn mv-btn-style-22">Helmet</a><a href="#" class="mv-btn mv-btn-style-22 active">Gloves</a><a href="#" class="mv-btn mv-btn-style-22">Sercurity</a><a href="#" class="mv-btn mv-btn-style-22">Boots</a><a href="#" class="mv-btn mv-btn-style-22">Clothing</a><a href="#" class="mv-btn mv-btn-style-22">Luggage</a><a href="#" class="mv-btn mv-btn-style-22">Maintenance</a><a href="#" class="mv-btn mv-btn-style-22">Bodywork</a><a href="#" class="mv-btn mv-btn-style-22">Gift</a><a href="#" class="mv-btn mv-btn-style-22">Exhauts</a><a href="#" class="mv-btn mv-btn-style-22">Tyres</a><a href="#" class="mv-btn mv-btn-style-22">Casual Wear</a><a href="#" class="mv-btn mv-btn-style-22">R&amp;G Racing</a></div>
+                        <div class="group-inner"><a href="#" class="mv-btn mv-btn-style-22">ADIDAS</a><a href="#" class="mv-btn mv-btn-style-22 active">NIKE</a><a href="#" class="mv-btn mv-btn-style-22">PUMA</a><a href="#" class="mv-btn mv-btn-style-22">UHLSPORT</a><a href="#" class="mv-btn mv-btn-style-22">REUSCH</a><a href="#" class="mv-btn mv-btn-style-22">AVIATA</a><a href="#" class="mv-btn mv-btn-style-22">APD</a><a href="#" class="mv-btn mv-btn-style-22">SELLS</a><a href="#" class="mv-btn mv-btn-style-22">Ho Soccer</a></div>
                       </div>
                     </div>
                   </div>
