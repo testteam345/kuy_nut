@@ -948,7 +948,7 @@
                     str +='</div>'
                     str +='</div>'
                     str +='<button type="button" title="Remove from Wishlist"'
-                    str +='class="mv-btn mv-btn-style-4 fa fa-close btn-delete-product"></button>'
+                    str +='class="mv-btn mv-btn-style-4 fa fa-close btn-delete-product" onclick="delete_cart(' + data.cart_list[i].cart_id +')"></button>'
                     str +='</div>'
                     str +='</article>'
 
@@ -959,8 +959,7 @@
                         // str += '         <p class="product-name">' + data.cart_list[i].pro_name + '</p>';
                         // str += '         <p class="product-price">' + data.cart_list[i].cart_qty + ' x ฿' + data.cart_list[i].pro_price + '</p>';
                         // str += '     </div>';
-                        // str += '     <a href="#" onclick="delete_cart(' + data.cart_list[i].cart_id +
-                        //     ')" class="delete-item">';
+                        // str += '     <a href="#" onclick="delete_cart(' + data.cart_list[i].cart_id +')" class="delete-item">';
                         // str += '         <i class="zmdi zmdi-close-circle-o"></i>';
                         // str += '     </a>';
                         // str += ' </li>';
