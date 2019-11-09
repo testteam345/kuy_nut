@@ -80,27 +80,12 @@
 
                 </div>
               </div>
-              <!-- .mv-list-product-wrapper-->
-
               <div class="mv-pagination-wrapper">
                 <div class="mv-pagination-style-1 has-count-post">
                   <div class="count-post mv-title-style-10"><span class="number">12</span> Products of <span class="number">5</span> Pages</div>
-                  {{-- <ul class="pagination">
-                    <li class="prev"><a href="#">prev</a></li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li class="active"><a>3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li class="next"><a href="#">next</a></li>
-                  </ul> --}}
-                 
                 </div>
-                <!-- .mv-pagination-style-1-->
               </div>
-              <!-- .mv-pagination-wrapper-->
             </div>
-            <!-- .mv-c-s-content-->
 
             <div class="mv-c-s-sidebar col-xs-12 col-md-4 col-lg-3 hidden-xs hidden-sm">
               <div class="mv-c-s-sidebar-inner">
