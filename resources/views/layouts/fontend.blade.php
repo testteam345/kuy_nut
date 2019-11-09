@@ -175,7 +175,7 @@
                                     </li>
                                 
                                     
-                                    <li><a href="about-us.html"><span class="menu-text">ผู้จัดทำ</span></a></li>
+                                <li><a href="{{route('abount')}}"><span class="menu-text">ผู้จัดทำ</span></a></li>
                                     <li><a href="contact.html"><span class="menu-text">ติดต่อเรา</span></a></li>
                                     
                                 </ul>

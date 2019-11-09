@@ -330,7 +330,7 @@
                             <div class="review-profile">
                                 <div class="mv-block-style-37">
                                     <div class="block-37-thumb"><a href="#"><span
-                                                style="background-image: url(images/avatar/avatar_100x100.png);"
+                                                style="background-image: url({{ env('APP_ASSET') }}assets/images/avatar/avatar_100x100.png);"
                                                 class="block-37-thumb-img"></span></a></div>
                                     <div class="block-37-main">
                                         <div class="block-37-name"><a href="#">Roman Travis</a></div>
