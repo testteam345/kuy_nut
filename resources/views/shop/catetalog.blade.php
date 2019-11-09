@@ -102,9 +102,9 @@
                     <div class="mv-aside mv-aside-search">
                         <div class="aside-title mv-title-style-11">search</div>
                         <div class="aside-body">
-                            <form method="GET" class="form-aside-search">
+                            <form method="GET" action="{{route('pro_all')}}" class="form-aside-search">
                                 <div class="mv-inputbox-icon right">
-                                    <input type="text" name="test138" class="mv-inputbox mv-inputbox-style-2">
+                                <input type="text" name="pro_name" value="{{(isset($_GET['pro_name']))?$_GET['pro_name']:''}}" class="mv-inputbox mv-inputbox-style-2">
                                     <button type="submit" class="icon mv-btn mv-btn-style-4 fa fa-search"></button>
                                 </div>
                             </form>
@@ -112,7 +112,21 @@
                     </div>
                     <!-- .mv-aside-search-->
 
-                    <div class="mv-aside mv-aside-filter-by-price">
+                    <div class="mv-aside mv-aside-product-type">
+                        <div class="aside-title mv-title-style-11">product type</div>
+                        <div class="aside-body">
+                          <nav class="product-type-menu mv-menu-style-1">
+                            <ul>
+                                @foreach ($cate_info as $row)
+                              <li><a href="{{route('pro_all')}}?cate_id={{$row->cate_id}}" class="mv-icon-left-style-5">{{$row->cate_name}}<span class="sub-text">&nbsp; ({{$row->count_num}})</span></a></li>
+                              @endforeach
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+
+
+                    {{-- <div class="mv-aside mv-aside-filter-by-price">
                         <div class="aside-title mv-title-style-11">filter by price</div>
                         <div class="aside-body">
                             <form method="GET" class="form-aside-filter-by-price">
@@ -155,11 +169,11 @@
                                 </ul>
                             </nav>
                         </div>
-                    </div>
+                    </div> --}}
                     <!-- .mv-aside-filter-by-price-->
 
 
-                    <div class="mv-aside mv-aside-tags">
+                    {{-- <div class="mv-aside mv-aside-tags">
                         <div class="aside-title mv-title-style-11">tags</div>
                         <div class="aside-body">
                             <div class="tag-list">
@@ -176,7 +190,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <!-- .mv-aside-tags-->
                 </div>
             </div>

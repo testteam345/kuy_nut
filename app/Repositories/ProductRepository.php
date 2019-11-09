@@ -37,10 +37,12 @@ class ProductRepository
                 $pro = $pro->whereBetween('tbl_products.pro_price',[$input['filter_min'],$input['filter_max']]);
             }
 
-            if(isset($input['cc'])&&$input['cc']!=''){
-                foreach($input['cc'] as $row){
-                    $pro = $pro->orwhere('tbl_products.cate_id',$row);
-                }
+            if(isset($input['pro_name'])&&$input['pro_name']!=''){
+                $pro = $pro->where('tbl_products.pro_name','like','%'.$input['pro_name'].'%');
+            }
+
+            if(isset($input['cate_id'])&&$input['cate_id']!=''){
+                    $pro = $pro->where('tbl_products.cate_id',$input['cate_id']);
             }
 
             $pro = $pro->where('active',$active)
